@@ -93,8 +93,8 @@ class CadastroFragment : Fragment(), View.OnClickListener {
         }
 
         if (txtNovoPassword.text.length < countValidationPassword) {
-            Log.d("CadastroFragment", getResources().getString(R.string.message_user_input_password_equals_or_greather))
-            Toast.makeText(context, getResources().getString(R.string.message_user_input_password_equals_or_greather), Toast.LENGTH_LONG).show()
+            Log.d("CadastroFragment", getResources().getString(R.string.message_user_input_password_valid))
+            Toast.makeText(context, getResources().getString(R.string.message_user_input_password_valid), Toast.LENGTH_LONG).show()
             return false
         }
 

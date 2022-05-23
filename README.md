@@ -1,9 +1,4 @@
-
-# Título do Projeto
-
-Uma breve descrição sobre o que esse projeto faz e para quem ele é
-
-<h1>Gerenciar Carros para Locações - FIAP</h1>
+<h1>Gerenciar carros e locações - FIAP</h1>
 
 <p align="center">
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
@@ -26,30 +21,25 @@ Uma breve descrição sobre o que esse projeto faz e para quem ele é
 
 ## Descrição do projeto
 
-Este sistema é um aplicativo de Lista de Carros para Locação de Locadoras
+Este sistema compôem 3 modulos de um Projeto de Monitoramento de Drones:
+
+- **drone-monitor-job** -> Responsável por enviar de forma simulada 4 drones com informações aleatórias do temperatura e de umidade
+- **drone-monitor-producer** -> Responsável por receber dados do drone através do end-point (localhost:8082/api/v1/drones-monitor/drones/register/), validar suas rastreabilidade, e envia para o tópico do Kafka.
+- **drone-monitor-consumer** -> Responsável por consumir as mensagens do tópico do kafka e trata-las a sua deserialização e validar as informações do drone, estando dentro das regras de alerta, será enviado um e-mail
 
 ## Funcionalidades
 
-#### :heavy_check_mark: **Lista de Carros para Locação de Locadoras**
+#### :heavy_check_mark: **Monitoramento de Informações enviadas de Drones**
+- ##### Monitoramento de Informações enviadas de Drones
 
-  - ###### Cadastro de usuário para entrar na aplicação (Cadastro de Usuário)
-  - ###### Validação de campos na tela de cadastro do usuário
-	- ##### campos obrigatórios (e-mail, senha)
-	- ##### e-mail válido
-	- ##### senha válido, acima de 5 dígitos
-  - ###### Efetuar Login na aplicação (Tela Inicial)
-  - ###### Validação campos na tela de Login na aplicação (Tela Inicial)
-	- ##### campos obrigatórios (e-mail, senha)
-	- ##### e-mail válido
-	- ##### senha válido, acima de 5 dígitos
-  - ###### Seleção de veículos disponíveis (Tela Home)
-  - ###### Sair da aplicação (Tela Home)
-  - ###### Listagem de veículos (Tela Listagem)
-	  - ###### Edição de veículos (Tela Listagem)
-		- ##### campos obrigatórios (Marca / Modelo, Chassi (acima de 17 dígitos), Descrição)
-	  - ###### Cadastro de veículos (Tela Listagem)
-		- ##### campos obrigatórios (Marca / Modelo, Chassi (acima de 17 dígitos), Descrição)
-  - ###### Informações sobre Desenvolvedores e Versão do aplicativo
+  - ###### Seleção de drones para recuperar informações
+  - ###### Postagema automatizada de informações do drone no end-point do produtor kafka
+  - ###### Validar rastreabilidade do drone e serialização dos dados
+  - ###### Postar no tópico do kafka
+  - ###### Consumir do tópico do kafka
+  - ###### Deserializar as informações do drone
+  - ###### Validar a regra para envio do alerta
+  - ###### Enviar e-mail quando igual ou superior a regra parametrizada
 
 ## Tecnologias
 
@@ -65,7 +55,11 @@ Este sistema é um aplicativo de Lista de Carros para Locação de Locadoras
 
 ## Vídeo-1 Apresentação da Aplicação :dash:
 
-> Link em vídeo da aplicação rodando. https://www.loom.com/share/7dc7fc7fbcde4242b9117fd30f47deeb
+> Link em vídeo da aplicação rodando. https://www.loom.com/share/2cbb9686bbc442de93fa1f238a52d546
+
+## Vídeo-2 Apresentação da Aplicação :dash:
+
+> Link em vídeo-2 da aplicação rodando.  https://www.loom.com/share/1605329bd5e54e60915623a4a59367d5
 
 ## Como rodar a aplicação :arrow_forward:
 
@@ -88,6 +82,6 @@ Liste o time responsável pelo desenvolvimento do projeto
 
 ## Licença
 
-The [Google Play Licensing](https://developer.android.com/google/play/licensing)
+The [Google Play Licensing](https://developer.android.com/google/play/licensing) (MIT)
 
 Copyright :copyright: Ano - Titulo do Projeto
