@@ -3,7 +3,7 @@
 
 Uma breve descrição sobre o que esse projeto faz e para quem ele é
 
-<h1>Gerenciar carros e locações - FIAP</h1>
+<h1>Gerenciar Carros para Locações - FIAP</h1>
 
 <p align="center">
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
@@ -65,7 +65,7 @@ Este sistema é um aplicativo de Lista de Carros para Locação de Locadoras
 
 ## Vídeo-1 Apresentação da Aplicação :dash:
 
-> Link em vídeo da aplicação rodando. https://www.loom.com/share/f65a8e3fb1fc4e28ae1e1b6698adf604
+> Link em vídeo da aplicação rodando. https://www.loom.com/share/7dc7fc7fbcde4242b9117fd30f47deeb
 
 ## Como rodar a aplicação :arrow_forward:
 
@@ -88,6 +88,6 @@ Liste o time responsável pelo desenvolvimento do projeto
 
 ## Licença
 
-The [Google Play Licensing](https://developer.android.com/google/play/licensing) (MIT)
+The [Google Play Licensing](https://developer.android.com/google/play/licensing)
 
 Copyright :copyright: Ano - Titulo do Projeto
