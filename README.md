@@ -1,11 +1,11 @@
-<h1>Monitoramento de Informações de Drones - FIAP</h1> 
+<h1>Gerenciar carros e locações - FIAP</h1>
 
 <p align="center">
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
    <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
 
-> Status do Projeto: :heavy_check_mark: :warning: (concluido, com possíbilidade de um versão com autenticação, e front-end simplificado)
+> Status do Projeto: :heavy_check_mark: :warning: (concluido)
 
 ### Tópicos
 
@@ -43,18 +43,13 @@ Este sistema compôem 3 modulos de um Projeto de Monitoramento de Drones:
 
 ## Tecnologias
 
-- [Docker](https://www.docker.com/products/docker-desktop)
-- [Java 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.htm)
-- [Intellij](https://www.jetbrains.com/idea/download/#download-section) (IDE)
-- [Docker](https://www.docker.com/products/docker-desktop)
-- [Docker Compose](https://docs.docker.com/compose/install/)
-- [Kafka](https://kafka.apache.org/)
-- [Lombok](https://projectlombok.org/)
+
+- [Android Studio](https://developer.android.com/studio) (IDE)
+- [Kotlin](https://kotlinlang.org/)
 - [Gradle](https://gradle.org/)
-- [Spring](https://spring.io/)
-- [Spring Kafka](https://spring.io/projects/spring-kafka)
-- [Spring RestTemplate](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html)
-- [Spring Freemarker](https://docs.spring.io/spring-framework/docs/3.0.0.M4/reference/html/ch16s04.html)
+- [RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview)
+- [Firebase](https://firebase.google.com)
+- [API 21 - Android Lollipop](https://developer.android.com/about/versions/lollipop?hl=pt-br)
 
 
 
@@ -71,32 +66,22 @@ Este sistema compôem 3 modulos de um Projeto de Monitoramento de Drones:
 No terminal, clone o projeto:
 
 ```
-git clone https://github.com/ricardosoareslacerda/broker-drone-monitor.git
+git clone https://github.com/ricardosoareslacerda/loca_autos.git
 ```
 
-- [Instalar o JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
-- [Instalar o Intellij](https://www.jetbrains.com/idea/download/#download-section)
-- Baixar o projeto do git [git clone https://github.com/ricardosoareslacerda/broker-drone-monitor.git]
-- [Instalar o Docker](https://www.docker.com/products/docker-desktop)
-- Executar o Docker Compose:
-  - docker-compose up (na raiz do projeto)
-  - aguardar a instalação do server (Zookeeper/Kafka)
-- Iniciar a ide Intellij
-- Abrir o projeto no Intellij
-- Para receber o envio de alerta, das informações do drone, será necessário configurar o e-mail no arquivo de properties do projeto. 
-```  drone-monitor-consumer -> src\main\resources -> application.properties - mail.sender.toAddresses```
-- Executar os projetos no Intellij:
-  * **drone-monitor-producer**
-  * **drone-monitor-consumer**
-  * **drone-monitor-job**
+- [Android Studio](https://developer.android.com/studio)
+- Iniciar a ide Android Studio
+- Abrir o projeto pelo android studio
+- Instalar o disposito de emulação adicionando a SDK
+- Aguardar a emulação iniciar para utilizar o app
 
 ## Desenvolvedores/Contribuintes :octocat:
 
 Liste o time responsável pelo desenvolvimento do projeto
-[<br><sub>Ricardo Lacerda</sub>](https://github.com/ricardosoareslacerda) | [<br><sub>Marcos Porto</sub>](https://github.com/maporto) |  [<br><sub>Juscelino Carvalho</sub>](https://github.com/JuscelinoCarvalho) |  [<br><sub>Gabriel Batalha</sub>]() |
+[<br><sub>Ricardo Lacerda</sub>](https://github.com/ricardosoareslacerda) | [<br><sub>Marcos Porto</sub>](https://github.com/maporto) |  [<br><sub>Juscelino Carvalho</sub>](https://github.com/JuscelinoCarvalho) |  [<br><sub>Gabriel Batalha</sub>](https://github.com/GabrielBatalhaDEV) |
 
 ## Licença
 
-The [Apacha 2]() (MIT)
+The [Google Play Licensing](https://developer.android.com/google/play/licensing) (MIT)
 
 Copyright :copyright: Ano - Titulo do Projeto
