@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_about"
     android:paddingLeft="@dimen/fragment_horizontal_margin"
     android:paddingTop="@dimen/fragment_vertical_margin"
     android:paddingRight="@dimen/fragment_horizontal_margin"
     android:paddingBottom="@dimen/fragment_vertical_margin"
-    android:background="@color/blue_jussa"
-    tools:context=".ui.about.AboutFragment"
-    >
+    tools:context=".ui.about.AboutFragment">
 
     <ImageView
         android:id="@+id/labelTextViewLogo"
-        android:layout_width="113dp"
+        android:layout_width="0dp"
         android:layout_height="122dp"
         android:layout_marginTop="4dp"
         android:src="@drawable/new_loca_auto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/labelTextViewVersion"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/roundCorner" />
 
@@ -36,8 +34,8 @@
         android:inputType="text"
         android:minHeight="48dp"
         android:selectAllOnFocus="true"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColor="@color/blue_jussa_2"
+        android:textColorHint="@color/blue_jussa_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -51,8 +49,8 @@
         android:hint="@string/developers"
         android:minHeight="48dp"
         android:selectAllOnFocus="true"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColor="@color/blue_jussa_2"
+        android:textColorHint="@color/blue_jussa_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/labelTextViewVersion"
